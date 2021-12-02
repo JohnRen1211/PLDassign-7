@@ -11,3 +11,10 @@ elif response == ("N"):
 elif response != "Y" or "N":
      print("Put Valid Value")
 
+#Making fucntion for password
+
+def password_valid(password):
+    Special_character = ["!","@","#","$","%","^","&","*","(",")","_","-","+","=","<",">"]
+    val = True 
+
+
