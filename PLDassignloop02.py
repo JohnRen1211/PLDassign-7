@@ -43,7 +43,7 @@ def password_valid(password):
 
     if val:
         return val
-        
+
 #The main method to calling the fucntion
 def main():
     password = input("Enter sample password: ")
@@ -51,4 +51,11 @@ def main():
         print ("Password valid")
     else:
         print("Input valid password")
+    
+if __name__ == "__main__":
+    main()  
+
+# The print will show after processed
+print("Program successfully Processed")  
+
 
