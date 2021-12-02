@@ -43,5 +43,12 @@ def password_valid(password):
 
     if val:
         return val
-
+        
+#The main method to calling the fucntion
+def main():
+    password = input("Enter sample password: ")
+    if (password_valid(password)):
+        print ("Password valid")
+    else:
+        print("Input valid password")
 
