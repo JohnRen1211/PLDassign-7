@@ -11,8 +11,15 @@ elif response == ("N"):
 elif response != "Y" or "N":
      print("Put Valid Value")
      raise SystemExit
-   
-# Making program for word 
 
+# Coding program for the counting word
+sentence = input("Type a sample sentence : ")
+word= 1
+vowels = 0
+consonants = 0
+sentence.upper() 
 
-
+for i in range(len(sentence)):
+    if(sentence[i] == ' ' or sentence == '\n' or sentence == '\t'):
+       word = word + 1  
+print("the total numbers of words=", word) 
