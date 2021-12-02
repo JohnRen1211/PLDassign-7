@@ -17,4 +17,31 @@ def password_valid(password):
     Special_character = ["!","@","#","$","%","^","&","*","(",")","_","-","+","=","<",">"]
     val = True 
 
+    if len(password) < 15:
+        print ("Length of password must not be less than 15")
+        val = False
+    
+    if len (password) > 15:
+       print("Length of password must not be greater than 15")
+       val = False
+    
+    if not any (char.isdigit() for char in password):
+        print("Password must have numerical character")
+        val = False
+    
+    if not any (char.isupper() for char in password):
+        print("Password must have upper case character")
+        val = False
+
+    if not any (char.islower() for char in password):
+        print("password must have lower case")
+        val = False
+    
+    if not any (char in Special_character for char  in password):
+        print("Password must have special character")
+        val = False
+
+    if val:
+        return val
+
 
