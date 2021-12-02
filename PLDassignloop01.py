@@ -36,3 +36,6 @@ for i in sentence:
           consonants = consonants + 1
 
 # Printing the output of the program
+print("the total numbers of vowels=", vowels)
+print("the total numbers of consonants=", consonants) 
+print("Program successfully processed")  
